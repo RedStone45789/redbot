@@ -1,6 +1,7 @@
 import discord, datetime, time
 from discord.ext import commands
 from datetime import date, datetime
+token = ${{ secrets.DISCORD_TOKEN}}
 
 intents = discord.Intents.all()
 client = commands.Bot(command_prefix="r!", case_insensitive=True, intents=intents)
@@ -35,4 +36,4 @@ async def _help(ctx):
 
 
 
-client.run("OTk1Njg1MzI5MTE1ODI0MTQ4.GOwm-9.KlQkx-9LlpGNVEc2tRHmlk1VvVM2eaT-zX1KFI")
+client.run(token)
